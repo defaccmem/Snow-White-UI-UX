@@ -1,0 +1,2280 @@
+import React from 'react';
+
+const styles = {
+  Screen: {
+    backgroundColor: '#000000',
+  },
+};
+
+const Screen = (props) => {
+  return (
+    <div style={styles.Screen}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Screen;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '32px',
+    fontFamily: 'Grenze Gotisch',
+    fontWeight: 500,
+    lineHeight: '42px',
+  },
+};
+
+const defaultProps = {
+  text: 'SNOW WHITE',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  ImageContainer: {
+    top: '15px',
+    left: '13px',
+    width: '71px',
+    height: '81px',
+    borderRadius: '8px',
+    backgroundImage: 'url(./image.png)',
+    backgroundPosition: 'center center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  },
+};
+
+const defaultProps = {
+  image: 'https://assets.api.uizard.io/api/cdn/stream/ec988569-3005-4112-800d-4906368cea03.png',
+}
+
+const Image = (props) => {
+  return (
+    <div style={{
+      ...styles.ImageContainer,
+      backgroundImage: `url(${props.image ?? defaultProps.image})`,
+    }} />
+  );
+};
+
+export default Image;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '119px',
+    left: '24px',
+    width: '1394px',
+    height: '649px',
+    backgroundColor: '#212121',
+    borderRadius: '29px',
+    border: '2px solid #424242',
+    boxSizing: 'border-box',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '24px',
+    fontFamily: 'Roboto',
+    fontWeight: 600,
+    lineHeight: '32px',
+  },
+};
+
+const defaultProps = {
+  text: 'Memory Microscope',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '187px',
+    left: '46px',
+    width: '556px',
+    height: '564px',
+    backgroundColor: '#000000',
+    borderRadius: '29px',
+    border: '2px solid #424242',
+    boxSizing: 'border-box',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '212px',
+    left: '70px',
+    width: '202px',
+    height: '32px',
+    backgroundColor: '#4ade80',
+    borderRadius: '9999px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#000000',
+    fontSize: '16px',
+    fontFamily: 'Roboto',
+    lineHeight: '24px',
+  },
+};
+
+const defaultProps = {
+  text: 'User: Hello, how are you?',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Poison Vector A',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '260px',
+    left: '70px',
+    width: '281px',
+    height: '32px',
+    backgroundColor: '#333333',
+    borderRadius: '9999px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '16px',
+    fontFamily: 'Roboto',
+    lineHeight: '24px',
+  },
+};
+
+const defaultProps = {
+  text: 'Agent: I\'m fine, thank you for asking!',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Benign Probe',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '308px',
+    left: '70px',
+    width: '320px',
+    height: '32px',
+    backgroundColor: '#4ade80',
+    borderRadius: '9999px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#000000',
+    fontSize: '16px',
+    fontFamily: 'Roboto',
+    lineHeight: '24px',
+  },
+};
+
+const defaultProps = {
+  text: 'User: Can you remember my last request?',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Trigger',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '356px',
+    left: '70px',
+    width: '259px',
+    height: '32px',
+    backgroundColor: '#333333',
+    borderRadius: '9999px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '16px',
+    fontFamily: 'Roboto',
+    lineHeight: '24px',
+  },
+};
+
+const defaultProps = {
+  text: 'Agent: Let me check that for you.',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Core Memory Append',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Trigger',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '136px',
+    left: '651px',
+    width: '356px',
+    height: '615px',
+    backgroundColor: '#000000',
+    borderRadius: '29px',
+    border: '2px solid #424242',
+    boxSizing: 'border-box',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '16px',
+    fontFamily: 'Roboto',
+    lineHeight: '24px',
+    textAlign: 'center',
+  },
+};
+
+const defaultProps = {
+  text: 'Memory State',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '16px',
+    fontFamily: 'Roboto',
+    lineHeight: '24px',
+    textAlign: 'center',
+  },
+};
+
+const defaultProps = {
+  text: 'Inner Monologue (CoT)',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '136px',
+    left: '651px',
+    width: '356px',
+    height: '615px',
+    backgroundColor: '#000000',
+    borderRadius: '29px',
+    border: '2px solid #424242',
+    boxSizing: 'border-box',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '212px',
+    left: '666px',
+    width: '327px',
+    height: '236px',
+    backgroundColor: '#212121',
+    borderRadius: '8px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '18px',
+    fontFamily: 'Roboto',
+    lineHeight: '28px',
+  },
+};
+
+const defaultProps = {
+  text: 'Context Window Messages',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Message: Your previous request was regarding memory management.',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '18px',
+    fontFamily: 'Roboto',
+    lineHeight: '28px',
+  },
+};
+
+const defaultProps = {
+  text: 'Core Memory User Profile',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Name: John Doe',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Role: Researcher',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '18px',
+    fontFamily: 'Roboto',
+    lineHeight: '28px',
+  },
+};
+
+const defaultProps = {
+  text: 'Latent Trust Score: 85%',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '212px',
+    left: '666px',
+    width: '327px',
+    height: '236px',
+    backgroundColor: '#212121',
+    borderRadius: '8px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '464px',
+    left: '666px',
+    width: '327px',
+    height: '204px',
+    backgroundColor: '#212121',
+    borderRadius: '8px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '18px',
+    fontFamily: 'Roboto',
+    lineHeight: '28px',
+  },
+};
+
+const defaultProps = {
+  text: 'Inner Monologue (CoT)',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Thought 1: Check memory logs for recent changes.',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Thought 2: Evaluate safety of current memory state.',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Thought 3: Override trigger detected, assess risk.',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Dropdown: {
+    cursor: 'pointer',
+    top: '136px',
+    left: '1072px',
+    width: '327px',
+    height: '22px',
+    padding: '0px 8px',
+    border: '0',
+    boxSizing: 'border-box',
+    borderRadius: '5px',
+    backgroundColor: '#333333',
+    color: '#ffffff',
+    fontSize: '16px',
+    fontFamily: 'Roboto',
+    lineHeight: '22px',
+    outline: 'none',
+  },
+};
+
+const defaultProps = {
+  label: 'Run 1',
+  values: [
+    'Run 2',
+    'Run 3',
+  ],
+};
+
+const Dropdown = (props) => {
+  return (
+    <select style={styles.Dropdown} defaultValue="">
+      <option value="" disabled hidden>{props.label ?? defaultProps.label}</option>
+      {(props.values ?? defaultProps.values).map((value) => (
+        <option value={value} key={value}>{value}</option>
+      ))}
+    </select>
+  );
+};
+
+export default Dropdown;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '175px',
+    left: '1072px',
+    width: '327px',
+    height: '132px',
+    backgroundColor: '#000000',
+    borderRadius: '8px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '18px',
+    fontFamily: 'Roboto',
+    lineHeight: '28px',
+  },
+};
+
+const defaultProps = {
+  text: 'Baseline Profiling',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Messages: 120',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Memory Writes: 45',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#eab308',
+    fill: '#eab308',
+    fontSize: '18px',
+    top: '270px',
+    left: '1088px',
+    width: '18px',
+    height: '16px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 576 512">
+    <path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '323px',
+    left: '1072px',
+    width: '327px',
+    height: '132px',
+    backgroundColor: '#000000',
+    borderRadius: '8px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '18px',
+    fontFamily: 'Roboto',
+    lineHeight: '28px',
+  },
+};
+
+const defaultProps = {
+  text: 'Attack',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Messages: 85',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Memory Writes: 30',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#eab308',
+    fill: '#eab308',
+    fontSize: '18px',
+    top: '418px',
+    left: '1088px',
+    width: '18px',
+    height: '16px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 576 512">
+    <path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '323px',
+    left: '1072px',
+    width: '327px',
+    height: '132px',
+    backgroundColor: '#000000',
+    borderRadius: '8px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '471px',
+    left: '1072px',
+    width: '327px',
+    height: '132px',
+    backgroundColor: '#000000',
+    borderRadius: '8px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '18px',
+    fontFamily: 'Roboto',
+    lineHeight: '28px',
+  },
+};
+
+const defaultProps = {
+  text: 'Aftermath',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Messages: 70',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Memory Writes: 20',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#eab308',
+    fill: '#eab308',
+    fontSize: '18px',
+    top: '566px',
+    left: '1088px',
+    width: '18px',
+    height: '16px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 576 512">
+    <path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '619px',
+    left: '1072px',
+    width: '327px',
+    height: '132px',
+    backgroundColor: '#000000',
+    borderRadius: '8px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#ffffff',
+    fontSize: '18px',
+    fontFamily: 'Roboto',
+    lineHeight: '28px',
+  },
+};
+
+const defaultProps = {
+  text: 'Interpretability',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Messages: 95',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#c1c1c1',
+    fontSize: '14px',
+    fontFamily: 'Roboto',
+    lineHeight: '20px',
+  },
+};
+
+const defaultProps = {
+  text: 'Memory Writes: 40',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#eab308',
+    fill: '#eab308',
+    fontSize: '18px',
+    top: '714px',
+    left: '1088px',
+    width: '18px',
+    height: '16px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 576 512">
+    <path d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '788px',
+    left: '269px',
+    width: '895px',
+    height: '74px',
+    backgroundColor: '#212121',
+    borderRadius: '23px',
+    border: '2px solid #474a4b',
+    boxSizing: 'border-box',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#f2f2f2',
+    fontSize: '12px',
+    fontFamily: 'Quicksand',
+    fontWeight: 500,
+    lineHeight: '16px',
+    textAlign: 'center',
+  },
+};
+
+const defaultProps = {
+  text: 'Experiments',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#e5e7eb',
+    fill: '#e5e7eb',
+    fontSize: '28px',
+    top: '811px',
+    left: '306px',
+    width: '28px',
+    height: '29px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 448 512">
+    <path d="M437.2 403.5L319.1 215L319.1 64h7.1c13.25 0 23.1-10.75 23.1-24l-.0002-16c0-13.25-10.75-24-23.1-24H120C106.8 0 96.01 10.75 96.01 24l-.0002 16c0 13.25 10.75 24 23.1 24h7.1L128 215l-117.2 188.5C-18.48 450.6 15.27 512 70.89 512h306.2C432.7 512 466.5 450.5 437.2 403.5zM137.1 320l48.15-77.63C189.8 237.3 191.9 230.8 191.9 224l.0651-160h63.99l-.06 160c0 6.875 2.25 13.25 5.875 18.38L309.9 320H137.1z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '794px',
+    left: '280px',
+    width: '79px',
+    height: '62px',
+    backgroundColor: '#000000',
+    borderRadius: '16px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#f2f2f2',
+    fontSize: '12px',
+    fontFamily: 'Quicksand',
+    fontWeight: 500,
+    lineHeight: '16px',
+    textAlign: 'center',
+  },
+};
+
+const defaultProps = {
+  text: 'Live Run',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '794px',
+    left: '379px',
+    width: '79px',
+    height: '62px',
+    backgroundColor: '#000000',
+    borderRadius: '16px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#e5e7eb',
+    fill: '#e5e7eb',
+    fontSize: '40px',
+    top: '806px',
+    left: '399px',
+    width: '40px',
+    height: '38px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 640 512">
+    <path d="M476 480h-152c-19.88 0-36-16.12-36-36v-348H192v156c0 19.88-16.12 36-36 36H31.1C14.33 288 0 273.7 0 256s14.33-31.1 31.1-31.1H128v-156c0-19.88 16.12-36 36-36h152c19.88 0 36 16.12 36 36v348h96v-156c0-19.88 16.12-36 36-36h124C625.7 224 640 238.3 640 256s-14.33 32-31.1 32H512v156C512 463.9 495.9 480 476 480z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '794px',
+    left: '478px',
+    width: '79px',
+    height: '62px',
+    backgroundColor: 'rgba(255,0,39,0.56)',
+    borderRadius: '16px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#000000',
+    fill: '#000000',
+    fontSize: '40px',
+    top: '806px',
+    left: '498px',
+    width: '40px',
+    height: '38px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 24 24">
+    <path fill="none" d="M0 0h24v24H0z">
+    </path>
+    <path d="m22 20.59-4.69-4.69A7.902 7.902 0 0 0 19 11c0-4.42-3.58-8-8-8-4.08 0-7.44 3.05-7.93 7h2.02C5.57 7.17 8.03 5 11 5c3.31 0 6 2.69 6 6s-2.69 6-6 6c-2.42 0-4.5-1.44-5.45-3.5H3.4C4.45 16.69 7.46 19 11 19c1.85 0 3.55-.63 4.9-1.69L20.59 22 22 20.59z">
+    </path>
+    <path d="M8.43 9.69 9.65 15h1.64l1.26-3.78.95 2.28h2V12h-1l-1.25-3h-1.54l-1.12 3.37L9.35 7H7.7l-1.25 4H1v1.5h6.55z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '794px',
+    left: '577px',
+    width: '79px',
+    height: '62px',
+    backgroundColor: '#000000',
+    borderRadius: '16px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#f2f2f2',
+    fontSize: '12px',
+    fontFamily: 'Quicksand',
+    fontWeight: 500,
+    lineHeight: '16px',
+    textAlign: 'center',
+  },
+};
+
+const defaultProps = {
+  text: 'CoT Monitor',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#e5e7eb',
+    fill: '#e5e7eb',
+    fontSize: '29px',
+    top: '809px',
+    left: '602px',
+    width: '29px',
+    height: '33px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 512 512">
+    <path d="M184 0C214.9 0 240 25.07 240 56V456C240 486.9 214.9 512 184 512C155.1 512 131.3 490.1 128.3 461.9C123.1 463.3 117.6 464 112 464C76.65 464 48 435.3 48 400C48 392.6 49.27 385.4 51.59 378.8C21.43 367.4 0 338.2 0 304C0 272.1 18.71 244.5 45.77 231.7C37.15 220.8 32 206.1 32 192C32 161.3 53.59 135.7 82.41 129.4C80.84 123.9 80 118 80 112C80 82.06 100.6 56.92 128.3 49.93C131.3 21.86 155.1 0 184 0zM383.7 49.93C411.4 56.92 432 82.06 432 112C432 118 431.2 123.9 429.6 129.4C458.4 135.7 480 161.3 480 192C480 206.1 474.9 220.8 466.2 231.7C493.3 244.5 512 272.1 512 304C512 338.2 490.6 367.4 460.4 378.8C462.7 385.4 464 392.6 464 400C464 435.3 435.3 464 400 464C394.4 464 388.9 463.3 383.7 461.9C380.7 490.1 356.9 512 328 512C297.1 512 272 486.9 272 456V56C272 25.07 297.1 0 328 0C356.9 0 380.7 21.86 383.7 49.93z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '794px',
+    left: '676px',
+    width: '79px',
+    height: '62px',
+    backgroundColor: '#000000',
+    borderRadius: '16px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#e5e7eb',
+    fill: '#e5e7eb',
+    fontSize: '40px',
+    top: '806px',
+    left: '696px',
+    width: '40px',
+    height: '38px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 24 24">
+    <path d="M0 0h24v24H0z" fill="none">
+    </path>
+    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#f2f2f2',
+    fontSize: '12px',
+    fontFamily: 'Quicksand',
+    fontWeight: 500,
+    lineHeight: '16px',
+    textAlign: 'center',
+  },
+};
+
+const defaultProps = {
+  text: 'Benchmarks',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '794px',
+    left: '775px',
+    width: '79px',
+    height: '62px',
+    backgroundColor: '#000000',
+    borderRadius: '16px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#f2f2f2',
+    fontSize: '12px',
+    fontFamily: 'Quicksand',
+    fontWeight: 500,
+    lineHeight: '16px',
+    textAlign: 'center',
+  },
+};
+
+const defaultProps = {
+  text: 'Sanitizer',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#e5e7eb',
+    fill: '#e5e7eb',
+    fontSize: '30px',
+    top: '809px',
+    left: '800px',
+    width: '30px',
+    height: '32px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 512 512">
+    <path d="M288 255.1c-8.836 0-16 7.162-16 16c0 8.836 7.164 15.1 16 15.1s16-7.163 16-15.1C304 263.2 296.8 255.1 288 255.1zM224 191.1c-8.836 0-16 7.162-16 16c0 8.836 7.164 16 15.1 16s16-7.164 16-16C240 199.2 232.8 191.1 224 191.1zM466.5 83.68l-192-80.01C269.6 1.641 261.3 0 256.1 0C250.7 0 242.5 1.641 237.6 3.672l-192 80.01C27.69 91.07 16 108.6 16 127.1C16 385.2 205.2 512 255.9 512c52.02 0 240.1-128.2 240.1-384C496 108.6 484.3 91.07 466.5 83.68zM384 255.1h-12.12c-19.29 0-32.06 15.78-32.06 32.23c0 7.862 2.918 15.88 9.436 22.4l8.576 8.576c3.125 3.125 4.688 7.218 4.688 11.31c0 8.527-6.865 15.1-16 15.1c-4.094 0-8.188-1.562-11.31-4.688l-8.576-8.576c-6.519-6.519-14.53-9.436-22.4-9.436c-16.45 0-32.23 12.77-32.23 32.06v12.12c0 8.844-7.156 16-16 16s-16-7.156-16-16v-12.12c0-19.29-15.78-32.06-32.23-32.06c-7.862 0-15.87 2.917-22.39 9.436l-8.576 8.576c-3.125 3.125-7.219 4.688-11.31 4.688c-9.139 0-16-7.473-16-15.1c0-4.094 1.562-8.187 4.688-11.31l8.576-8.576c6.519-6.519 9.436-14.53 9.436-22.4c0-16.45-12.77-32.23-32.06-32.23H128c-8.844 0-16-7.156-16-16s7.156-16 16-16h12.12c19.29 0 32.06-15.78 32.06-32.23c0-7.862-2.918-15.88-9.436-22.4L154.2 160.8C151 157.7 149.5 153.6 149.5 149.5c0-8.527 6.865-15.1 16-15.1c4.094 0 8.188 1.562 11.31 4.688L185.4 146.7C191.9 153.3 199.9 156.2 207.8 156.2c16.45 0 32.23-12.77 32.23-32.07V111.1c0-8.844 7.156-16 16-16s16 7.156 16 16v12.12c0 19.29 15.78 32.07 32.23 32.07c7.862 0 15.88-2.917 22.4-9.436l8.576-8.577c3.125-3.125 7.219-4.688 11.31-4.688c9.139 0 16 7.473 16 15.1c0 4.094-1.562 8.187-4.688 11.31l-8.576 8.577c-6.519 6.519-9.436 14.53-9.436 22.4c0 16.45 12.77 32.23 32.06 32.23h12.12c8.844 0 16 7.156 16 16S392.8 255.1 384 255.1z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '794px',
+    left: '874px',
+    width: '79px',
+    height: '62px',
+    backgroundColor: '#000000',
+    borderRadius: '16px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#e5e7eb',
+    fill: '#e5e7eb',
+    fontSize: '40px',
+    top: '806px',
+    left: '894px',
+    width: '40px',
+    height: '38px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 24 24">
+    <path d="M0 0h24v24H0z" fill="none">
+    </path>
+    <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#f2f2f2',
+    fontSize: '12px',
+    fontFamily: 'Quicksand',
+    fontWeight: 500,
+    lineHeight: '16px',
+    textAlign: 'center',
+  },
+};
+
+const defaultProps = {
+  text: 'Library',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '794px',
+    left: '973px',
+    width: '79px',
+    height: '62px',
+    backgroundColor: '#000000',
+    borderRadius: '16px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#e5e7eb',
+    fill: '#e5e7eb',
+    fontSize: '40px',
+    top: '806px',
+    left: '993px',
+    width: '40px',
+    height: '38px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 24 24">
+    <path fill="none" d="M0 0h24v24H0z">
+    </path>
+    <path d="M9.01 14H2v2h7.01v3L13 15l-3.99-4v3zm5.98-1v-3H22V8h-7.01V5L11 9l3.99 4z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#f2f2f2',
+    fontSize: '12px',
+    fontFamily: 'Quicksand',
+    fontWeight: 500,
+    lineHeight: '16px',
+    textAlign: 'center',
+  },
+};
+
+const defaultProps = {
+  text: 'Compare',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+
+import React from 'react';
+
+const styles = {
+  Card: {
+    top: '794px',
+    left: '1072px',
+    width: '79px',
+    height: '62px',
+    backgroundColor: '#000000',
+    borderRadius: '16px',
+  },
+};
+
+const Card = (props) => {
+  return (
+    <div style={styles.Card}>
+      {props.children}
+    </div>
+  );
+};
+
+export default Card;
+
+
+import React from 'react';
+
+const styles = {
+  Icon: {
+    color: '#e5e7eb',
+    fill: '#e5e7eb',
+    fontSize: '40px',
+    top: '806px',
+    left: '1092px',
+    width: '40px',
+    height: '38px',
+  },
+};
+
+const IconComponent = () => (
+  <svg style={styles.Icon}  viewBox="0 0 24 24">
+    <path d="M0 0h24v24H0z" fill="none">
+    </path>
+    <path d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z">
+    </path>
+  </svg>
+);
+
+const defaultProps = {
+  IconComponent,
+};
+
+const Icon = (props) => {
+  return (
+    props.IconComponent 
+      ? <props.IconComponent style={styles.Icon} /> 
+      : <defaultProps.IconComponent />
+  );
+};
+
+export default Icon;
+
+
+import React from 'react';
+
+const styles = {
+  Text: {
+    color: '#f2f2f2',
+    fontSize: '12px',
+    fontFamily: 'Quicksand',
+    fontWeight: 500,
+    lineHeight: '16px',
+    textAlign: 'center',
+  },
+};
+
+const defaultProps = {
+  text: 'Settings',
+};
+
+const Text = (props) => {
+  return (
+    <div style={styles.Text}>
+      {props.text ?? defaultProps.text}
+    </div>
+  );
+};
+
+export default Text;
+
+
+
+
